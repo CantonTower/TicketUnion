@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="6dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_sell_photo"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/tv_sell_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="水电费会计师是否打开精神分裂的框架爱上了的框架撒娇空队列"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sell_original_prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原价"
+            android:textColor="#d0021b"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_sell_off_prise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="劵后价"
+            android:textColor="#d0021b"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

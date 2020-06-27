@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_ticket_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淘口令"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="33dp">
+
+        <ImageView
+            android:id="@+id/iv_ticket_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGray"/>
+
+        <com.longrise.ticketunion.ui.custom.LoadingView
+            android:id="@+id/ticket_photo_loading"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_ticket_load_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载出错，请点击重试"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_ticket_code"
+        android:layout_width="244dp"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="#4a4a4a"
+        android:background="@drawable/shape_ticket_code_bg"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tv_ticket_copy_or_open"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
+        android:text="领劵"
+        android:gravity="center"
+        android:background="@drawable/shape_get_ticket_button_bg"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>

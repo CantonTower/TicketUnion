@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#efeeee"
+    android:orientation="vertical">
+
+    <!--搜索历史-->
+    <LinearLayout
+        android:id="@+id/layout_search_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="搜索历史"
+                android:textSize="14sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_search_history_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/delete_icon"
+                />
+
+        </LinearLayout>
+
+        <com.longrise.ticketunion.ui.custom.TextFlowLayout
+            android:id="@+id/search_history_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:horizontalSpace="10dp"
+            app:verticalSpace="10dp"/>
+
+    </LinearLayout>
+
+    <!--热门搜索-->
+    <LinearLayout
+        android:id="@+id/layout_search_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="热门搜索"
+            android:textSize="14sp"
+            />
+
+        <com.longrise.ticketunion.ui.custom.TextFlowLayout
+            android:id="@+id/search_recommend_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:horizontalSpace="10dp"
+            app:verticalSpace="10dp"/>
+
+    </LinearLayout>
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/search_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</LinearLayout>

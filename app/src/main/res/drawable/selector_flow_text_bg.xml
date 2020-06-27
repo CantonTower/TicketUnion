@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--有状态的一定放在前面，无状态的一定要放在后面-->
+
+    <item android:drawable="@drawable/shape_flow_text_bg_press" android:state_pressed="true"/>
+
+    <item android:drawable="@drawable/shape_flow_text_bg_normal"/>
+
+</selector>
